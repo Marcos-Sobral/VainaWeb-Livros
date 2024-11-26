@@ -1,0 +1,48 @@
+.primeiraSessaoInicio {
+    height: 75vh;
+    background-image: url('../../assets/books.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+
+    h2 {
+        color: #fff;
+        font-size: 32px;
+        width: 20%;
+    }
+}
+
+.porqueDoarSection{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: space-evenly;
+    align-items: center;
+    h2{
+        font-size: 40px;
+        color: #005695;
+        width: 90%;
+    }
+}
+
+.containerCards{
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    section{
+        background-color: #0157944D;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px red;
+        p{
+            font-size: 22px;
+            text-align: center;
+            width: 92%;
+        }
+    }
+}
