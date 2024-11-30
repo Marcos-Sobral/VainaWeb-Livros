@@ -12,18 +12,18 @@ import s from "./header.module.scss"
 export default function Header() {
     return (
         <BrowserRouter>
-            <header>
+            <header className="">
                 <section className={s.header_logo}>
                     <img src={LogoLivros} alt="A imagem ilustra a logo do site, um livro aberto ao meio, tendo uma capa azul e folhas brancas" />
                     <h1>Livros Vai Na Web</h1>
                 </section>
-                <nav>
-                    <ul>
-                        <li><Link to="/" href="">Inicio</Link></li>
+                <nav className="">
+                    <ul className="">
+                        <li className=""><Link to="/" href="">Inicio</Link></li>
 
-                        <li><Link to="/livrosDoados" href="">Livros Doados</Link></li>
+                        <li className=""><Link to="/livrosDoados" href="">Livros Doados</Link></li>
 
-                        <li><Link to="/queroDoar" href="">Quero Doar</Link></li>
+                        <li className=""><Link to="/queroDoar" href="">Quero Doar</Link></li>
                     </ul>
                 </nav>
                 <section className={s.barraBusca}>
