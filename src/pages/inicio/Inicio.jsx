@@ -4,6 +4,7 @@ import imagem2 from '../../assets/image2.png';
 import imagem3 from '../../assets/image3.png';
 import imagem4 from '../../assets/image4.png';
 
+
 export default function Inicio() {
     return(
         <main>
@@ -15,7 +16,7 @@ export default function Inicio() {
                 <div className={s.containerCards}>
                     <section>
                         <img src={imagem1} alt="Imagem ilustrando círculo social de 4 pessoas" />
-                        <p>Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</p>
+                        <p> Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
                     </section>
                     <section>
                         <img src={imagem2} alt="Imagem ilustrando pessoa lendo" />

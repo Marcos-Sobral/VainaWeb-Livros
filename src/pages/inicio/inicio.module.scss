@@ -2,6 +2,7 @@
     height: 75vh;
     background-image: url('../../assets/books.png');
     background-repeat: no-repeat;
+    background-position:center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -43,6 +44,27 @@
             font-size: 22px;
             text-align: center;
             width: 92%;
+        }
+    }
+}
+
+@media (max-width:950px){
+    .primeiraSessaoInicio{
+        h2{
+            width: 92%;
+            text-align: center;
+        }
+    }
+    .containerCards{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        section{
+            width: 80vw;
+            padding: 5%;
+            border-radius: 20px;
+            gap: 2em;
         }
     }
 }

@@ -72,3 +72,35 @@ header nav ul li a{
         cursor:pointer;
     }
 }
+
+@media (max-width:1200px) {
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header_logo{
+        border: red solid;
+        width: 80%;
+        justify-content: space-evenly;
+        img{
+           width: 15%;
+        }
+        h1{
+            font-size: 3vh;
+        }
+    }
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        border: solid yellow;
+        width: 100%;
+        padding: 2%;
+        justify-content: space-evenly;
+    }
+    .barraBusca{
+        display: none;
+    }
+}

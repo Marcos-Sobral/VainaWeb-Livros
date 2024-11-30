@@ -20,7 +20,9 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li><Link to="/" href="">Inicio</Link></li>
+
                         <li><Link to="/livrosDoados" href="">Livros Doados</Link></li>
+
                         <li><Link to="/queroDoar" href="">Quero Doar</Link></li>
                     </ul>
                 </nav>
