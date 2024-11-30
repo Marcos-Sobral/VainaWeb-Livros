@@ -10,7 +10,7 @@ export default function Footer(){
         <footer className={s.footer}>
             <section className={s.contatosFooter}>
                 <p>4002-8922</p>
-                <nav>
+                <nav className="">
                     <a href=""><img src={logoFacebook} alt="Imagem branca da logo do Facebook" /></a>
                     <a href=""><img src={logoTwitter} alt="Imagem branca da logo do Twitter" /></a>
                     <a href=""><img src={logoYoutube} alt="Imagem branca da logo do Youtube" /></a>
