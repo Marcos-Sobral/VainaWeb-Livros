@@ -19,7 +19,7 @@ export default function Header() {
                 </section>
                 <nav className="">
                     <ul className="">
-                        <li className=""><Link to="/" href="">Inicio</Link></li>
+                        <li className=""><Link to="/VainaWeb-Livros" href="">Inicio</Link></li>
 
                         <li className=""><Link to="/livrosDoados" href="">Livros Doados</Link></li>
 
@@ -33,7 +33,7 @@ export default function Header() {
             </header>
 
         <Routes>
-            <Route path="/" element={<Start />}/>
+            <Route path="/VainaWeb-Livros" element={<Start />}/>
             <Route path="/livrosDoados" element={<LivrosDoados />}/>
             <Route path="/queroDoar" element={<QueroDoar />}/>
         </Routes>
