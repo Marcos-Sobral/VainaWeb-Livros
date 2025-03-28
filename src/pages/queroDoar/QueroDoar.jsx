@@ -46,6 +46,9 @@ export default function QueroDoar() {
             <section className={s.QueroDoarSection}>
                 <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
                 <p>{titulo}</p>
+                <p>{categoria}</p>
+                <p>{autor}</p>
+                <p><img src={image_url} alt="" srcset="" /></p>
                 <section className={s.formsDoarSection}>
                     <div className={s.formDoarTitulo}>
                         <img src={bookIcon} alt="Ícone de Livro" />
