@@ -39,8 +39,6 @@ export default function QueroDoar() {
             console.error("Erro ao enviar dados:", erro); 
             alert("Ocorreu um erro ao enviar os dados. Tente novamente.");
         }
-
-
     }
 
     return(
