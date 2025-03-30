@@ -1,4 +1,4 @@
-<p align="center"><a href="https://marcos-sobral.github.io/VainaWeb-Livros/" target="_blank"><img src="https://cdn.discordapp.com/attachments/1109841111385641056/1312790645332643901/LinkedIn_Banner__3_-removebg-preview.png?ex=674dc710&is=674c7590&hm=aef1944c3c1eda1b9bd42a4eefdc19eb57471e3cd93187cdbef33ad61942483d&" width="400" alt="imagem da logo do sistema sobraldev"></a></p>
+<p align="center"><a href="https://marcos-sobral.github.io/VainaWeb-Livros/" target="_blank"><img src="./src/assets/Readme/newLogo.png" width="400" alt="imagem da logo do sistema sobraldev"></a></p>
 
 # Templete: site de doação de livros
 
