@@ -6,76 +6,34 @@ import { useEffect } from 'react';
 
 
 export default function LivrosDoados() {
+        const [livros, setLivros] = useState([]);
 
-        const [titulo, setTitulo] = useState([]);
-        const [categoria, setCategoria] = useState([]);
-        const [autor, setAutor] = useState([]);
-        const [image_url, setImage_url] = useState([]);
-        
-        const endPointApi = "https://vnw-api.onrender.com/livrosdoados";
-
-        const pegarDados = async() =>{
-            try {                
-                const dados = {
-                    titulo,
-                    categoria,
-                    autor,
-                    image_url
-                }
-    
-                const resposta = await axios.get(endPointApi,dados);
-                let array = resposta.data;
-                console.log("Dados recebidos com sucesso!", array);
-                
-                let section =  window.document.getElementById("conteudo");
-                section.innerHTML = resposta.data.map(i =>
-                    `
-                    <section>
-                        <img src=${i[`image_url`]} />
-                        <div>
-                            <h3>${i[`titulo`]}</h3>
-                            <p>${i[`autor`]}</p>
-                            <p>${i[`categoria`]}</p>
-                        </div>
-                    </section>
-                `
-                );
-
-                /*resposta.data.forEach(i => {
-                    setTitulo(i["titulo"]);
-                    setCategoria(i["categoria"]);
-                    setAutor(i["autor"]);
-                    console.log(i["autor"]);
-                    setImage_url(i["image_url"]);
-                    section.innerHTML = `
-                        <section>
-                            <img src=${image_url} />
-                            <div>
-                                <h3>${titulo}</h3>
-                                <p>${autor}</p>
-                                <p>${categoria}</p>
-                            </div>
-                        </section>
-                    `
-                });*/
-            } catch (error) {
-                console.log("Ocorreu algum erro no recebimento dos dados: ", error);
-            }
+        const puxarLivros = async() =>{
+            const resposta = await axios.get("https://vnw-api.onrender.com/livrosdoados");       
+            setLivros(resposta.data);
         }
-            
-        //carregamento automatico da função ao carregar ou atualizar a pg
+
         useEffect(()=>{
-            pegarDados();
+            puxarLivros();
         },[]);
+
     return(
         <>
         <section className={s.LivrosDoadosSection}>
             <h2>Livros Doados</h2>
             <section id="conteudo" className={s.containerCards}>
-
+            {livros.map((item) => (
+                <section>
+                    <img src={item.image_url} alt={`Imagem do livro ${item.titulo}`} />
+                    <div>
+                        <h3>{item.titulo}</h3>
+                        <p>{item.autor}</p>
+                        <p>{item.categoria}</p>
+                    </div>
+                </section>
+            ))}
             </section>
         </section>
-       
         </>
     )
     
